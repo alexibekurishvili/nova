@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="ka" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nexus - თანამედროვე, ინოვაციური ციფრული გადაწყვეტები, AI ტექნოლოგიები და მაღალი წარმადობის ვებ-პროდუქტები თქვენი ბიზნესის წარმატებისთვის.">
+  <meta name="keywords" content="Nexus, Landing Page, ტექნოლოგიები, AI, ვებ-დეველოპმენტი, დიზაინი, ინოვაცია, თბილისი">
+  <meta name="author" content="Nexus Team">
+  <title>NEXUS • მომავლის ციფრული გამოცდილება</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans, Outfit & Noto Sans Georgian -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Noto+Sans+Georgian:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236366f1'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>">
+</head>
+<body>
+
+  <!-- Background Ambient Glow Orbs -->
+  <div class="ambient-glow orb-1" aria-hidden="true"></div>
+  <div class="ambient-glow orb-2" aria-hidden="true"></div>
+  <div class="ambient-glow orb-3" aria-hidden="true"></div>
+
+  <!-- Header / Navbar -->
+  <header class="navbar-wrapper" id="mainHeader">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="NEXUS Home">
+        <div class="logo-icon-box">
+          <svg class="logo-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <span class="logo-text">NEXUS<span class="logo-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links" id="desktopNav" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active">მთავარი</a>
+        <a href="#about" class="nav-link">ჩვენს შესახებ</a>
+        <a href="#features" class="nav-link">ფუნქციები</a>
+        <a href="#connect" class="nav-link">დაკავშირება</a>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle & CTA) -->
+      <div class="nav-actions">
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="შეცვალე თემა (Dark / Light)">
+          <!-- Moon Icon (Dark Mode active) -->
+          <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun Icon (Light Mode active) -->
+          <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <a href="#connect" class="btn btn-primary nav-cta-btn">
+          <span>დაიწყე ახლავე</span>
+          <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="mobileMenuToggle" class="mobile-toggle-btn" aria-label="მენიუს გახსნა" aria-expanded="false">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <div class="mobile-nav-inner">
+        <a href="#hero" class="mobile-nav-link active">მთავარი</a>
+        <a href="#about" class="mobile-nav-link">ჩვენს შესახებ</a>
+        <a href="#features" class="mobile-nav-link">ფუნქციები</a>
+        <a href="#connect" class="mobile-nav-link">დაკავშირება</a>
+        <div class="mobile-nav-footer">
+          <a href="#connect" class="btn btn-primary w-full">დაიწყე ახლავე</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==============================================
+         1. HERO SECTION
+    =============================================== -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        
+        <!-- Hero Text Content -->
+        <div class="hero-content reveal-on-scroll">
+          <div class="hero-badge">
+            <span class="badge-pulse"></span>
+            <span class="badge-icon">✨</span>
+            <span class="badge-text">Nexus 2.0 • AI-ზე დაფუძნებული მომავალი</span>
+          </div>
+
+          <h1 class="hero-title">
+            ინოვაციური ციფრული <br>
+            <span class="gradient-text">გადაწყვეტები შენი</span> <br>
+            ბიზნესის წარმატებისთვის
+          </h1>
+
+          <p class="hero-description">
+            შექმენი, მართე და გაზარდე შენი პროექტი თანამედროვე ტექნოლოგიებით, 
+            ელვისებური სისწრაფითა და უმაღლესი კიბერუსაფრთხოებით. ყველაფერი ერთ ეკოსისტემაში.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#connect" class="btn btn-primary btn-lg glow-effect">
+              <span>დაიწყე უფასოდ</span>
+              <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#features" class="btn btn-secondary btn-lg">
+              <svg class="btn-play-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <span>გაიგე მეტი</span>
+            </a>
+          </div>
+
+          <!-- Social Proof / Trust metrics -->
+          <div class="hero-trust">
+            <div class="trust-avatars">
+              <span class="trust-avatar av-1">🚀</span>
+              <span class="trust-avatar av-2">⚡</span>
+              <span class="trust-avatar av-3">✨</span>
+              <span class="trust-avatar av-4">💎</span>
+            </div>
+            <div class="trust-text">
+              <div class="trust-rating">★★★★★ <span>4.9 / 5.0</span></div>
+              <p class="trust-sub">ენდობა <strong>500+</strong> ინოვაციური კომპანია</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase -->
+        <div class="hero-visual reveal-on-scroll">
+          <div class="hero-card-frame" id="tiltContainer">
+            <div class="hero-image-wrapper">
+              <img src="assets/hero-visual.jpg" alt="Nexus Dashboard Visualization" class="hero-main-img" loading="eager">
+              <div class="image-overlay-glow"></div>
+            </div>
+
+            <!-- Floating Glassmorphic Badges -->
+            <div class="floating-badge badge-top-right float-anim-1">
+              <div class="badge-icon-wrap green">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                  <polyline points="17 6 23 6 23 12"></polyline>
+                </svg>
+              </div>
+              <div class="floating-badge-text">
+                <span class="badge-val">+148.5%</span>
+                <span class="badge-lbl">ზრდის ტემპი</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left float-anim-2">
+              <div class="badge-icon-wrap purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+              <div class="floating-badge-text">
+                <span class="badge-val">$124.7k</span>
+                <span class="badge-lbl">თვიური შემოსავალი</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-middle-right float-anim-3">
+              <div class="badge-icon-wrap cyan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="floating-badge-text">
+                <span class="badge-val">99.99%</span>
+                <span class="badge-lbl">სისტემის Uptime</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         2. ABOUT SECTION (ჩვენს შესახებ)
+    =============================================== -->
+    <section id="about" class="about-section">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-tag">ჩვენს შესახებ</span>
+          <h2 class="section-title">ინოვაცია, ხარისხი და <span class="gradient-text">გაზომვადი შედეგები</span></h2>
+          <p class="section-subtitle">
+            Nexus არის ტექნოლოგიური ენთუზიასტებისა და ინჟინრების გუნდი, რომელიც ციფრულ იდეებს 
+            აქცევს მაღალი წარმადობის, თანამედროვე და მოქნილ რეალობად.
+          </p>
+        </div>
+
+        <!-- About Bento Grid -->
+        <div class="about-grid">
+          
+          <!-- Card 1: Main Story Card -->
+          <div class="about-card story-card reveal-on-scroll">
+            <div class="card-icon-halo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <h3 class="card-title">ჩვენი მისია და ხედვა</h3>
+            <p class="card-desc">
+              ჩვენ ვქმნით ციფრულ ინსტრუმენტებს, რომლებიც ბიზნესებს ეხმარება ყოველდღიური რუტინის 
+              ავტომატიზაციაში, მომხმარებელთა გამოცდილების გაუმჯობესებასა და მასშტაბურ ზრდაში. 
+              ჩვენთვის მნიშვნელოვანია ყოველი პიქსელი და კოდის ყოველი ხაზი.
+            </p>
+            <div class="card-pill-list">
+              <span class="mini-pill">💡 ინოვაციური მიდგომა</span>
+              <span class="mini-pill">🎯 მიზანზე ორიენტაცია</span>
+              <span class="mini-pill">⚡ ულტრა-სწრაფი დელივერი</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Interactive Pillar 1 -->
+          <div class="about-card pillar-card reveal-on-scroll">
+            <div class="pillar-icon">🚀</div>
+            <h3 class="card-title">მომავლის ტექნოლოგიები</h3>
+            <p class="card-desc">
+              ვიყენებთ უახლეს არქიტექტურას და AI მოდელებს, რათა თქვენი ციფრული პროდუქტი 
+              ყოველთვის ერთი ნაბიჯით უსწრებდეს კონკურენტებს.
+            </p>
+          </div>
+
+          <!-- Card 3: Interactive Pillar 2 -->
+          <div class="about-card pillar-card reveal-on-scroll">
+            <div class="pillar-icon">🛡️</div>
+            <h3 class="card-title">შეუვალი უსაფრთხოება</h3>
+            <p class="card-desc">
+              თქვენი და თქვენი მომხმარებლების მონაცემების დაცულობა ჩვენი უმაღლესი პრიორიტეტია. 
+              მრავალდონიანი შიფრაცია და მუდმივი მონიტორინგი.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Live Animated Stats Banner -->
+        <div class="stats-banner reveal-on-scroll" id="statsSection">
+          <div class="stat-item">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="150">0</span>
+              <span class="stat-suffix">+</span>
+            </div>
+            <p class="stat-label">წარმატებული პროექტი</p>
+          </div>
+          
+          <div class="stat-divider"></div>
+
+          <div class="stat-item">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="99.8" data-decimal="1">0</span>
+              <span class="stat-suffix">%</span>
+            </div>
+            <p class="stat-label">კმაყოფილი პარტნიორი</p>
+          </div>
+
+          <div class="stat-divider"></div>
+
+          <div class="stat-item">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="10">0</span>
+              <span class="stat-suffix">x</span>
+            </div>
+            <p class="stat-label">პროცესების დაჩქარება</p>
+          </div>
+
+          <div class="stat-divider"></div>
+
+          <div class="stat-item">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="24">0</span>
+              <span class="stat-suffix">/7</span>
+            </div>
+            <p class="stat-label">უწყვეტი მხარდაჭერა</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         3. FEATURES SECTION (ფუნქციები)
+    =============================================== -->
+    <section id="features" class="features-section">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-tag">შესაძლებლობები</span>
+          <h2 class="section-title">ყველაფერი, რაც გჭირდება <span class="gradient-text">სრულყოფილი შედეგისთვის</span></h2>
+          <p class="section-subtitle">
+            ჩვენი პლატფორმა აერთიანებს მძლავრ ფუნქციონალს, რომელიც გაძლევთ სრულ კონტროლს თქვენს ციფრულ პროდუქტზე.
+          </p>
+        </div>
+
+        <!-- Interactive Category Filter Tabs -->
+        <div class="features-tabs-wrapper reveal-on-scroll">
+          <div class="features-tabs" role="tablist">
+            <button class="tab-btn active" data-filter="all">ყველა ფუნქცია</button>
+            <button class="tab-btn" data-filter="ai">AI და ავტომატიზაცია</button>
+            <button class="tab-btn" data-filter="speed">სისწრაფე და ღრუბელი</button>
+            <button class="tab-btn" data-filter="security">დაცვა და ანალიტიკა</button>
+          </div>
+        </div>
+
+        <!-- Features Grid (with dynamic spotlight hover) -->
+        <div class="features-grid" id="featuresGrid">
+          
+          <!-- Feature 1 -->
+          <div class="feature-card reveal-on-scroll" data-category="ai">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">AI ჭკვიანი ავტომატიზაცია</h3>
+            <p class="feature-desc">
+              გამოიყენეთ ხელოვნური ინტელექტის უახლესი ალგორითმები რუტინული პროცესების გასამარტივებლად და დროის დასაზოგად.
+            </p>
+            <div class="feature-meta">
+              <span class="feature-badge">ჭკვიანი ალგორითმები</span>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card reveal-on-scroll" data-category="speed">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="feature-title">ელვისებური სისწრაფე</h3>
+            <p class="feature-desc">
+              ოპტიმიზებული კოდი და გლობალური CDN ქსელი უზრუნველყოფს გვერდის მომენტალურ ჩატვირთვას 0.2 წამზე ნაკლებ დროში.
+            </p>
+            <div class="feature-meta">
+              <span class="feature-badge">0.2s Latency</span>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card reveal-on-scroll" data-category="security">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">საბანკო დონის უსაფრთხოება</h3>
+            <p class="feature-desc">
+              AES-256 დაშიფვრა, ავტომატური სარეზერვო ასლები და DDoS შეტევებისგან დაცვა 24/7 რეჟიმში.
+            </p>
+            <div class="feature-meta">
+              <span class="feature-badge">AES-256 დაცვა</span>
+            </div>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-card reveal-on-scroll" data-category="security">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="feature-title">ლაივ ანალიტიკა და ინსაიტები</h3>
+            <p class="feature-desc">
+              მიიღეთ ზუსტი რეალურ დროში სტატისტიკა მომხმარებელთა ქცევისა და პროექტის კონვერსიის შესახებ.
+            </p>
+            <div class="feature-meta">
+              <span class="feature-badge">რეალურ დროში</span>
+            </div>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="feature-card reveal-on-scroll" data-category="speed">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">ღრუბლოვანი სინქრონიზაცია</h3>
+            <p class="feature-desc">
+              ყველა თქვენი ფაილი და მონაცემი მუდმივად სინქრონიზებულია ნებისმიერ მოწყობილობაზე შეუფერხებლად.
+            </p>
+            <div class="feature-meta">
+              <span class="feature-badge">ავტომატური Cloud Sync</span>
+            </div>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="feature-card reveal-on-scroll" data-category="ai">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="feature-title">100% რესპონსიული UI/UX</h3>
+            <p class="feature-desc">
+              სრულყოფილი ვიზუალი და უნაკლო ადაპტაცია სმარტფონებზე, პლანშეტებსა და დესკტოპ ეკრანებზე.
+            </p>
+            <div class="feature-meta">
+              <span class="feature-badge">Pixel Perfect</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         4. CONNECT / CONTACT SECTION (დაკავშირება)
+    =============================================== -->
+    <section id="connect" class="connect-section">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-tag">დაკავშირება</span>
+          <h2 class="section-title">მზად ხარ დასაწყებად? <span class="gradient-text">მოდი ვითანამშრომლოთ</span></h2>
+          <p class="section-subtitle">
+            მოგვწერეთ თქვენი იდეის ან პროექტის შესახებ და ჩვენი ექსპერტები 24 საათში დაგიკავშირდებიან.
+          </p>
+        </div>
+
+        <div class="connect-wrapper">
+          
+          <!-- Connect Info Column -->
+          <div class="connect-info-card reveal-on-scroll">
+            <h3 class="info-card-title">საკონტაქტო ინფორმაცია</h3>
+            <p class="info-card-desc">
+              ჩვენ ყოველთვის ღია ვართ ახალი იდეებისა და პარტნიორობისთვის. 
+              შეგიძლიათ პირდაპირ დაგვიკავშირდეთ ქვემოთ მითითებულ არხებზე:
+            </p>
+
+            <div class="contact-channels">
+              
+              <div class="channel-item">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">ელ-ფოსტა</span>
+                  <a href="mailto:hello@nexus.ge" class="channel-value">hello@nexus.ge</a>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">ტელეფონი</span>
+                  <a href="tel:+995322000000" class="channel-value">+995 (32) 200 00 00</a>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">მისამართი</span>
+                  <span class="channel-value">ჭავჭავაძის გამზ. 24, თბილისი</span>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">სამუშაო საათები</span>
+                  <span class="channel-value">ორშაბათი - პარასკევი: 10:00 - 19:00</span>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="connect-socials">
+              <span class="socials-label">გამოგვყევით სოციალურ ქსელებში:</span>
+              <div class="social-links">
+                <a href="#" class="social-btn" aria-label="LinkedIn" title="LinkedIn">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-btn" aria-label="GitHub" title="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-btn" aria-label="Telegram" title="Telegram">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.329-.625.329l.213-3.053 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.538-.196 1.006.128.832.937z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="connect-form-card reveal-on-scroll">
+            <h3 class="form-card-title">გამოგვიგზავნეთ შეტყობინება</h3>
+            <p class="form-card-subtitle">შეავსეთ ფორმა და ჩვენი გუნდი მალევე გიპასუხებთ.</p>
+
+            <form id="contactForm" class="contact-form" novalidate>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactName" class="form-label">თქვენი სახელი *</label>
+                  <input type="text" id="contactName" name="name" class="form-input" placeholder="მაგ: გიორგი ბერიძე" required>
+                  <span class="field-error-msg" id="nameError">გთხოვთ მიუთითოთ თქვენი სახელი</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactEmail" class="form-label">ელ-ფოსტა *</label>
+                  <input type="email" id="contactEmail" name="email" class="form-input" placeholder="example@mail.com" required>
+                  <span class="field-error-msg" id="emailError">გთხოვთ მიუთითოთ სწორი ელ-ფოსტა</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contactService" class="form-label">მომსახურების მიმართულება</label>
+                <div class="select-wrapper">
+                  <select id="contactService" name="service" class="form-input form-select">
+                    <option value="web">თანამედროვე ვებ-საიტი / Web App</option>
+                    <option value="ai">AI ინტეგრაცია & ავტომატიზაცია</option>
+                    <option value="uiux">UI / UX პროდუქტის დიზაინი</option>
+                    <option value="cloud">Cloud არქიტექტურა & ოპტიმიზაცია</option>
+                    <option value="consulting">ტექნიკური კონსულტაცია</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">მოკლე აღწერა / შეტყობინება *</label>
+                <textarea id="contactMessage" name="message" class="form-input form-textarea" rows="4" placeholder="მოგვიყევით თქვენი პროექტის ან მოთხოვნის შესახებ..." required></textarea>
+                <span class="field-error-msg" id="messageError">გთხოვთ ჩაწეროთ მოკლე შეტყობინება</span>
+              </div>
+
+              <button type="submit" id="submitBtn" class="btn btn-primary btn-submit w-full">
+                <span class="btn-text">გაგზავნა</span>
+                <span class="btn-spinner" aria-hidden="true"></span>
+                <svg class="btn-send-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div id="formSuccessAlert" class="form-alert form-alert-success" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="alert-icon">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <div class="alert-content">
+                  <strong>შეტყობინება წარმატებით გაიგზავნა!</strong>
+                  <p>მადლობა დაკავშირებისთვის, ჩვენი გუნდი მალე გიპასუხებთ.</p>
+                </div>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==============================================
+       FOOTER
+  =============================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo footer-logo">
+            <div class="logo-icon-box">
+              <svg class="logo-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <span class="logo-text">NEXUS<span class="logo-dot">.</span></span>
+          </a>
+          <p class="footer-tagline">
+            ინოვაციური ციფრული ტექნოლოგიები, მაღალი წარმადობის სისტემები და თანამედროვე გამოცდილება.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">ნავიგაცია</h4>
+          <ul class="footer-nav">
+            <li><a href="#hero">მთავარი</a></li>
+            <li><a href="#about">ჩვენს შესახებ</a></li>
+            <li><a href="#features">ფუნქციები</a></li>
+            <li><a href="#connect">დაკავშირება</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">სერვისები</h4>
+          <ul class="footer-nav">
+            <li><a href="#features">AI ავტომატიზაცია</a></li>
+            <li><a href="#features">Cloud არქიტექტურა</a></li>
+            <li><a href="#features">კიბერუსაფრთხოება</a></li>
+            <li><a href="#features">UI/UX დიზაინი</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col footer-newsletter-col">
+          <h4 class="footer-col-title">სიახლეების გამოწერა</h4>
+          <p class="newsletter-desc">მიიღეთ უახლესი ტექნოლოგიური სიახლეები პირველებმა.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="თქვენი ელ-ფოსტა" class="newsletter-input" required>
+            <button type="submit" class="newsletter-btn" aria-label="გამოწერა">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </form>
+          <div id="newsletterSuccess" class="newsletter-success-msg" style="display: none;">
+            ✓ წარმატებით გამოიწერეთ!
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 NEXUS. ყველა უფლება დაცულია.</p>
+        <div class="footer-legal">
+          <a href="#">კონფიდენციალურობა</a>
+          <span class="legal-dot">•</span>
+          <a href="#">წესები & პირობები</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scroll-To-Top Button with circular progress -->
+  <button id="scrollToTopBtn" class="scroll-top-btn" aria-label="გვერდის დასაწყისში დაბრუნება">
+    <svg class="progress-ring" width="48" height="48">
+      <circle class="progress-ring-circle" stroke="currentColor" stroke-width="3" fill="transparent" r="20" cx="24" cy="24"/>
+    </svg>
+    <svg class="arrow-up-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Interactive Toast Notification Element -->
+  <div id="toastNotification" class="toast-notification" role="status" aria-live="polite">
+    <div class="toast-icon">✓</div>
+    <div class="toast-message" id="toastMessage">მოქმედება წარმატებით შესრულდა!</div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
